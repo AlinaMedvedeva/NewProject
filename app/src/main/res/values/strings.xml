@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NewProject</string>
+    <string name="Welcome">Добро пожаловать!</string>
+    <string name="name">Введите ваше имя</string>
+    <string name="kg">Введите ваш вес(в кг)</string>
+    <string name="height">Введите ваш рост(в см)</string>
+    <string name="splash">Welcome</string>
+    <string name="gender">Ваш пол</string>
+</resources>
