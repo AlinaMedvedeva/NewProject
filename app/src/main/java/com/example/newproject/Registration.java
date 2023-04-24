@@ -14,10 +14,10 @@ import java.util.Date;
 public class Registration extends AppCompatActivity {
 
     SharedPreferences sharedPreferences;
+    //ключи
     String [] key = {"Первый", "Второй", "Третий", "Дата", "Завтрак", "Обед", "Ужин"};
     String [] food = {"Норма", "Белки", "Жиры", "Углеводы"};
     String [] info = {"Имя", "Вес", "Рост", "Пол", "Возраст"};
-    int [] id = {R.id.editText_name, R.id.editText_massa, R.id.editText_height};
     Button reg;
     EditText name, massa, height, gender, date;
     int birth;
@@ -62,6 +62,7 @@ public class Registration extends AppCompatActivity {
         });
     }
 
+    //высчитывем возраст
     public void OldDate()
     {
         String [] s = date.getText().toString().split("\\.");
@@ -79,6 +80,7 @@ public class Registration extends AppCompatActivity {
                 birth--;
         }
     }
+    //высчитываем норму КБЖУ
     public void Norma()
     {
         String gen = gender.getText().toString();

@@ -17,6 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class DashBoard extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+    //активность с редактированием данных
 
     String [] info = {"Имя", "Вес", "Рост", "Пол", "Возраст"};
     Button edit_bt;

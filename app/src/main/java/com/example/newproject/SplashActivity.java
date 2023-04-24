@@ -25,6 +25,7 @@ public class SplashActivity extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences("myShared", MODE_PRIVATE);
         proverka = sharedPreferences.getString("Вес", "Нет");
+        //если нет данных о человеке, переходим в регистрацию
         if(proverka != "Нет")
         {
             logo.append("\n" + sharedPreferences.getString("Имя", "Нет"));
@@ -43,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
                     i = new Intent(SplashActivity.this, Registration.class);
                 }
                 else {
-                    i = new Intent(SplashActivity.this, DashBoard.class);
+                    i = new Intent(SplashActivity.this, MainActivity.class);
                 }
                 startActivity(i);
                 finish();
